@@ -1,0 +1,19 @@
+server:
+  port: 8761
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://zml:zml@127.0.0.1:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    leaseExpirationDurationInSeconds: 120
+    leaseRenewalIntervalInSeconds: 60
+  server:
+    evictionIntervalTimerInMs: 5000
+    enable-self-preservation: false
+spring:
+  security:
+    user:
+      name: zml
+      password: zml

@@ -1,0 +1,12 @@
+server:
+  port: 9500
+spring:
+  application:
+    name: ServiceB
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://zml:zml@127.0.0.1:8761/eureka/
+  instance:
+    instance-id: product-service
+    prefer-ip-address: true

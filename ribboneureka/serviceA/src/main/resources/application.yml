@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: ServiceA
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://zml:zml@127.0.0.1:8761/eureka/
+  instance:
+    instance-id: product-service:8088
+    prefer-ip-address: true
